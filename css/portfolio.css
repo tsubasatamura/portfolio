@@ -1,0 +1,115 @@
+header{
+  background-image: url(../img/header-img.jpg);
+  background-repeat: no-repeat;
+  /* background-size: 100% auto; */
+  background-position: center top;
+  width: auto;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.head-title{
+  color: white;
+  margin-top: 90px;
+  font-size: 60px;
+  font-family: sans-serif;
+  text-shadow    :
+      2px  2px 1px black,
+     -2px  2px 1px black,
+      2px -2px 1px black,
+     -2px -2px 1px black,
+      2px  0px 1px black,
+      0px  2px 1px black,
+     -2px  0px 1px black,
+      0px -2px 1px black;
+}
+body {
+   margin: 0;
+   padding: 0;
+}
+h1{
+  text-align: center;
+}
+#wrap{
+  /* margin: auto; */
+  background-color: #DCDCDC;
+}
+#profile{
+  margin: 50px 200px;
+  padding-top: 35px;
+}
+#skill{
+  clear: both;
+  margin: 50px 50px;
+  padding-top: 50px;
+}
+table{
+  background-color: white;
+  border: 1px gray solid;
+  margin: auto;
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 120px;
+}
+.copyright{
+  text-align: center;
+  font-size: 12px;
+  padding:20px;
+}
+#header-nav{
+  /* font-family: 'ヒラギノ角ゴシック',sans-serif;  後で設定*/
+  background-color: #DCDCDC;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  /* position: absolute; */
+}
+#header-nav.fixed{
+  left: 0;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+}
+.hnav{
+  width: 340px;
+  /* 上のwidthで中央ぞろえにしている */
+	margin: auto;
+}
+li{
+  list-style-type: none;
+  float: left;
+  margin: 0 20px;
+}
+a{
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: dimgray;
+  text-decoration: underline;
+}
+.fnav{
+  padding: 15px 0px;
+  width: 190px;
+  /* 上のwidthで中央ぞろえにしている */
+  margin: auto;
+}
+.fnav li a{
+  font-size: 15px;
+  color: white;
+}
+.fnav li a:hover{
+  color: gray;
+}
+.profile-text{
+  float: left;
+  margin-top: 0px;
+  margin-left: 50px;
+  width: 470px;
+}
