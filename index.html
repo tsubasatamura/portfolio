@@ -2,31 +2,45 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link type="text/css" rel="stylesheet" href="portfolio.css">
+    <title>田村翼のポートフォリオサイト</title>
+    <link type="text/css" rel="stylesheet" href="./css/portfolio.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/portfolio.js"></script>
+    <script type="text/javascript" src="./js/scroll.js"></script>
   </head>
   <body>
     <!-- header start -->
   <div id="wrap">
     <header>
-    <h1 class="head-title">Tsubasa Tamura's Portfolio</h1>
+    <h1 class="head-title">Tsubasa Tamura's <br>Portfolio</h1>
     </header>
     <!-- hedder finish -->
 
       <!-- content start -->
-        <nav class="header-nav">
-          <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#skill">Skill</a></li>
+        <nav id="header-nav">
+          <ul class="hnav">
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#skill">SKILL</a></li>
           </ul>
         </nav>
+
+
+      <div class="main">
       <section id="profile">
         <h1>PROFILE</h1>
-        <img src="myimage.jpg" alt="自分の写真" style="float:left">
-        <p>田村翼と申します。</p>
-
-
+        <img src="./img/myimage.jpg" alt="自分の写真" style="float:left">
+        <p class="profile-text">
+          田村翼と申します。出身は北海道紋別市です。<br>前職は旅行会社に所属しており、
+          コロナ禍の影響で退職。<br>働いている中でOTA(Online Travel Agent)の凄まじさに<br>気付き、
+          IT業界へ興味を抱きました。<br>前職では営業や営業事務、経理事務など幅広い業務を担当し、<br>
+          社会人としての基礎は習得できたかと考えております。<br>
+          現在はITスクールでJavaを学んでおります。<br>
+          スクールではJavaの基本的な文法からMySQLを利用したデータベースの操作、
+          XHTMLやCSSの記述方法を学びました。<br>
+          今後はレストランの簡単な予約サイトを作成する予定です。
+        </p>
       </section>
+
 
       <section id="skill">
         <h1>SKILL</h1>
@@ -49,15 +63,16 @@
         <br>
         <br>
       </section>
+    </div>
 
       <!-- content finish -->
 
     <!-- footer start -->
     <footer>
       <nav class="footer-nav">
-        <ul>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#skill">Skill</a></li>
+        <ul class="fnav">
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#skill">SKILL</a></li>
         </ul>
       </nav>
     <p class="copyright">Copyright©Tsubasa Tamura. All Rights Reserved.</p>
