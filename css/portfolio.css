@@ -1,7 +1,6 @@
 header{
   background-image: url(../img/header-img.jpg);
   background-repeat: no-repeat;
-  /* background-size: 100% auto; */
   background-position: center top;
   width: auto;
   height: 350px;
@@ -29,24 +28,39 @@ body {
 }
 h1{
   text-align: center;
+  font-size: 40px;
 }
 #wrap{
-  /* margin: auto; */
   background-color: #DCDCDC;
 }
 #profile{
-  margin: 50px 200px;
+  margin: 50px 180px;
   padding-top: 35px;
 }
 #skill{
   clear: both;
-  margin: 50px 50px;
+  margin: 50px 200px;
   padding-top: 50px;
+}
+#works{
+  clear: both;
+  margin: 50px 200px;
+}
+#contact{
+  clear: both;
+  margin: 50px 200px;
 }
 table{
   background-color: white;
   border: 1px gray solid;
   margin: auto;
+  width:330px;
+}
+th,td{
+  text-align: center;
+}
+th{
+  font-size: 20px
 }
 footer{
   background-color: black;
@@ -59,12 +73,10 @@ footer{
   padding:20px;
 }
 #header-nav{
-  /* font-family: 'ヒラギノ角ゴシック',sans-serif;  後で設定*/
   background-color: #DCDCDC;
   font-weight: bold;
   padding: 10px;
-  width: 100%;
-  /* position: absolute; */
+  width: 98%;
 }
 #header-nav.fixed{
   left: 0;
@@ -76,7 +88,7 @@ footer{
   transform: translate3d(0, 0, 0);
 }
 .hnav{
-  width: 340px;
+  width: 600px;
   /* 上のwidthで中央ぞろえにしている */
 	margin: auto;
 }
@@ -94,9 +106,25 @@ a:hover{
   color: dimgray;
   text-decoration: underline;
 }
+a.http{
+  font-size: 15px;
+  color: blue;
+  text-decoration: none;
+}
+a.http:hover{
+  text-decoration: underline;
+}
+a.mail{
+  font-size: 15px;
+  color: blue;
+  text-decoration: none;
+}
+a.mail:hover{
+  text-decoration: underline;
+}
 .fnav{
   padding: 15px 0px;
-  width: 190px;
+  width: 400px;
   /* 上のwidthで中央ぞろえにしている */
   margin: auto;
 }
@@ -108,8 +136,150 @@ a:hover{
   color: gray;
 }
 .profile-text{
-  float: left;
+  float: right;
   margin-top: 0px;
   margin-left: 50px;
   width: 470px;
+}
+.right{
+  float: right;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  width: 380px;
+}
+.left{
+  float: left;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  width: 380px;
+}
+.left-under{
+  clear: both;
+  float: left;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  width: 380px;
+}
+.image{
+  float: left;
+}
+.contact-text{
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width:600px){
+  body {
+     margin: 0;
+     padding: 0;
+  }
+  header{
+    width: auto;
+    height: 200px;
+    background-size: cover;
+  }
+  .head-title{
+    margin-top: 50px;
+    font-size: 9vw;
+  }
+  .hnav{
+    width: auto;
+    /* 上のwidthで中央ぞろえにしている */
+  	margin: auto;
+  }
+  .hnav li a{
+    font-size: 6vw;
+  }
+  h1{
+    font-size: 8vw;
+  }
+  #header-nav{
+    padding: 10px;
+    width: auto;
+  }
+  #wrap{
+    margin: auto;
+  }
+  #profile{
+    text-align: center;
+    margin: 0px 5px;
+    padding-top: 50px;
+  }
+  .image{
+    float: none;
+    text-align: center;
+  }
+  .image img{
+    width: 60%;
+  }
+  .profile-text{
+    margin: 20px 3vw 0px 3vw;
+    float: none;
+    text-align: center;
+    width: auto;
+    font-size: 4vw;
+  }
+  #skill{
+    clear: both;
+    text-align: center;
+    margin: 0px 5px;
+    padding-top: 0px;
+  }
+  th,td{
+    font-size: 3.8vw;
+  }
+  .left{
+    float: none;
+    width: 90vw;
+    margin: 0px auto 50px auto;
+  }
+  .right{
+    float: none;
+    width: 90vw;
+    margin: 0px auto 50px auto;
+  }
+  #works{
+    clear: both;
+    text-align: center;
+    margin: 0px 5px;
+    padding-top: 0px;
+  }
+  td a{
+    display:block;
+    font-size: 3.8vw;
+  }
+  .left-under{
+    float: none;
+    width: 90vw;
+    margin: 0px auto 50px auto;
+  }
+  #contact{
+    clear: both;
+    text-align: center;
+    margin: 0px 5px;
+    padding-top: 0px;
+  }
+  .contact-text{
+    margin: 0px 3vw 40px 3vw;
+    text-align: center;
+    font-size: 4vw;
+  }
+  .fnav{
+    width: 355px;
+    /* 上のwidthで中央ぞろえにしている */
+    margin: 0px auto 20px auto;
+  }
+  .fnav li a{
+    color: white;
+    font-size: 3vw;
+  }
+  footer{
+    margin: auto;
+    height: 110px;
+  }
+  .copyright{
+    font-size: 3.2vw;
+  }
 }
