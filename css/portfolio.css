@@ -170,18 +170,30 @@ a.mail:hover{
   text-align: center;
   margin-bottom: 40px;
 }
-@media screen and (max-width:600px){
+.skill-text{
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width:1024px){
   body {
      margin: 0;
      padding: 0;
   }
+  a.http{
+    display: block;
+    font-size: 3.8vw;
+  }
+  a.mail{
+    display: block;
+    font-size: 3.8vw;
+  }
   header{
     width: auto;
-    height: 200px;
+    height: 50vw;
     background-size: cover;
   }
   .head-title{
-    margin-top: 50px;
+    margin-top: 12vw;
     font-size: 9vw;
   }
   .hnav{
@@ -199,10 +211,17 @@ a.mail:hover{
     padding: 10px;
     width: auto;
   }
+  nav{
+    width: auto;
+  }
+  #header-nav.fixed{
+    width: auto;
+  }
   #wrap{
     margin: auto;
   }
   #profile{
+    clear: both;
     text-align: center;
     margin: 0px 5px;
     padding-top: 50px;
@@ -218,6 +237,12 @@ a.mail:hover{
     margin: 20px 3vw 0px 3vw;
     float: none;
     text-align: center;
+    width: auto;
+    font-size: 4vw;
+  }
+  .skill-text{
+    margin: 5vw 3vw 5vw 3vw;
+    float: none;
     width: auto;
     font-size: 4vw;
   }
@@ -246,10 +271,6 @@ a.mail:hover{
     margin: 0px 5px;
     padding-top: 0px;
   }
-  td a{
-    display:block;
-    font-size: 3.8vw;
-  }
   .left-under{
     float: none;
     width: 90vw;
@@ -277,9 +298,10 @@ a.mail:hover{
   }
   footer{
     margin: auto;
-    height: 110px;
+    height: 28vw;
   }
   .copyright{
+    clear: both;
     font-size: 3.2vw;
   }
 }
