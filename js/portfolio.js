@@ -17,12 +17,12 @@ $(function () {
     });
   } else {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > nav_pos1) {
-            $("body").css("padding-top", nav_height1);
+        if ($(this).scrollTop() > nav_pos1 -10) {
+            $("#profile").css("padding-top", nav_height1);
             $("#hamburger").addClass("fixed");
             $(".sm").addClass("fixed");
         } else {
-            $("body").css("padding-top", 0);
+            $("#profile").css("padding-top", 0);
             $("#hamburger").removeClass("fixed");
             $(".sm").removeClass("fixed");
         }
