@@ -6,9 +6,10 @@
     <title>田村翼のポートフォリオサイト</title>
     <link rel="shortcut icon" href="./img/favicon283.ico">
     <link type="text/css" rel="stylesheet" href="./css/portfolio.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./js/portfolio.js"></script>
     <script type="text/javascript" src="./js/scroll.js"></script>
+    <script type="text/javascript" src="./js/hamburger.js"></script>
   </head>
   <body>
     <!-- header start -->
@@ -19,6 +20,26 @@
     <!-- hedder finish -->
 
       <!-- content start -->
+
+
+      <div id="hamburger">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+      </div>
+      <nav class="sm">
+        <ul>
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+
+
         <nav id="header-nav">
           <ul class="hnav">
             <li><a href="#profile">PROFILE</a></li>
@@ -42,7 +63,7 @@
           社会人としての基礎は習得できたかと考えております。<br>
           現在はITスクールでJavaを学んでおります。<br>
           スクールではJavaの基本的な文法からMySQLを利用したデータベースの操作、
-          XHTMLやCSSの記述方法を学びました。<br>
+          動的Webページの作成方法などを学びました。<br>
           今後はレストランの簡単な予約サイトを作成する予定です。
         </p>
       </section>
@@ -51,29 +72,35 @@
       <section id="skill">
         <h1>SKILL</h1>
         <p class="skill-text">
-          学習スキルの学習時間に関しましてはITスクールと独学の合計になります。
+          学習スキルの学習時間に関しましてはITスクールと独学の合計になります。<br>
+          スクールは今年の1月中旬から通い始め、7月中旬に卒業予定です。<br>
+          スクールでは単元ごとにテストがありますが、毎回9割5分以上の点数を収めております。<br>
+          1日の学習時間はスクール5時間＋独学2～3時間になります(ITパスポートや基本情報技術者試験の勉強含む)。
         </p>
         <table class="left">
           <tr>
-            <th colspan="2">学習スキル</th>
+            <th colspan="3">学習スキル</th>
           </tr>
           <tr>
-            <td>Java：</td><td>学習時間：500時間</td>
+            <th class="column">スキル</th><th class="column">学習時間</th><th class="column">理解度</th>
           </tr>
           <tr>
-            <td>HTML：</td><td>学習時間：50時間</td>
+            <td>Java</td><td>500時間</td><td>高</td>
           </tr>
           <tr>
-            <td>CSS：</td><td>学習時間：50時間</td>
+            <td>HTML</td><td>50時間</td><td>中</td>
           </tr>
           <tr>
-            <td>JavaScript：</td><td>学習時間：20時間</td>
+            <td>CSS</td><td>50時間</td><td>中</td>
           </tr>
           <tr>
-            <td>MySQL：</td><td>学習時間：80時間</td>
+            <td>JavaScript</td><td>20時間</td><td>低</td>
           </tr>
           <tr>
-            <td>AWS：</td><td>学習時間：20時間</td>
+            <td>MySQL</td><td>80時間</td><td>中</td>
+          </tr>
+          <tr>
+            <td>AWS</td><td>20時間</td><td>低</td>
           </tr>
         </table>
         <table class="right">
@@ -81,28 +108,37 @@
             <th colspan="2">保有資格</th>
           </tr>
           <tr>
-            <td colspan="2">&ensp; </td>
+            <th class="column">資格</th><th class="column">取得月</th>
           </tr>
           <tr>
-            <td>普通自動車運転免許：</td><td>2015年3月取得</td>
+            <td>普通自動車運転免許</td><td>2015年3月</td>
           </tr>
           <tr>
-            <td>国内旅行業務取扱管理者：</td><td>2017年10月取得</td>
+            <td>国内旅行業務取扱管理者</td><td>2017年10月</td>
           </tr>
           <tr>
-            <td>サウナ・スパ健康アドバイザー：</td><td>2021年3月取得</td>
+            <td>サウナ・スパ健康アドバイザー</td><td>2021年3月</td>
           </tr>
           <tr>
-            <td>ITパスポート：</td><td>2021年4月取得</td>
+            <td>ITパスポート</td><td>2021年4月</td>
           </tr>
           <tr>
             <td colspan="2">基本情報技術者試験　学習中(5月末に受験予定) </td>
+          </tr>
+          <tr>
+            <td colspan="2">&ensp; </td>
           </tr>
         </table>
       </section>
 
       <section id="works">
         <h1>WORKS</h1>
+        <p class="skill-text">
+          簡易掲示板やレストラン予約サイトはスクールで作成したものになります。<br>
+          サーバーの構築に関しましては簡易掲示板のGitHubのREADMEに手順を詳しく記載しておりますので<br>
+          興味がありましたら御覧ください。
+        </p>
+
         <table class="left">
           <tr>
             <th>簡易掲示板</th>
@@ -113,12 +149,13 @@
             </td>
           </tr>
           <tr>
-            <td><a href="http://www.tsubasatamura.cf/" class="http">http://www.tsubasatamura.cf/</a></td>
+            <td><a href="http://www.tsubasatamura.cf/bbs" class="http">http://www.tsubasatamura.cf/bbs</a></td>
           </tr>
           <tr>
             <td>ソースコード：<a href="https://github.com/tsubasatamura/bbs/tree/master" class="http">GitHub</a></td>
           </tr>
         </table>
+
         <table class="right">
           <tr>
             <th>レストラン予約サイト</th>
@@ -132,6 +169,7 @@
             <td>準備中</td>
           </tr>
         </table>
+
         <table class="left-under">
           <tr>
             <th>ポートフォリオサイト</th>
@@ -149,6 +187,40 @@
           </tr>
           <tr>
             <td>ソースコード：<a href="https://github.com/tsubasatamura/portfolio" class="http">GitHub</a></td>
+          </tr>
+        </table>
+
+        <table class="right">
+          <tr>
+            <th>じゃんけんゲーム</th>
+          </tr>
+          <tr>
+            <td>アルゴリズムの基本であるじゃんけんを</br>
+                動的Webページで作成。</br>工夫点はGitHubのREADMEをご確認ください。
+            </td>
+          </tr>
+          <tr>
+          <td><a href="http://www.tsubasatamura.cf/rpsgame/" class="http">http://www.tsubasatamura.cf/rpsgame/</a></td>
+          </tr>
+          <tr>
+            <td>ソースコード：<a href="https://github.com/tsubasatamura/rpsgame" class="http">GitHub</a></td>
+          </tr>
+        </table>
+
+        <table class="left-under">
+          <tr>
+            <th>HIT&amp;BLOW</th>
+          </tr>
+          <tr>
+            <td>簡単な数当てゲームを</br>
+                セッションを用い、作成。</br>工夫点はGitHubのREADMEをご確認ください。
+            </td>
+          </tr>
+          <tr>
+            <td><a href="http://www.tsubasatamura.cf/hbgame/" class="http">http://www.tsubasatamura.cf/hbgame/</a></td>
+          </tr>
+          <tr>
+            <td>ソースコード：<a href="https://github.com/tsubasatamura/hbgame" class="http">GitHub</a></td>
           </tr>
         </table>
       </section>

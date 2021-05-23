@@ -29,18 +29,19 @@ body {
 h1{
   text-align: center;
   font-size: 40px;
+  margin-bottom: 5px;
 }
 #wrap{
   background-color: #DCDCDC;
 }
 #profile{
   margin: 50px 180px;
-  padding-top: 35px;
+  padding-top: 0px;
 }
 #skill{
   clear: both;
   margin: 50px 200px;
-  padding-top: 50px;
+  padding-top: 5px;
 }
 #works{
   clear: both;
@@ -61,6 +62,9 @@ th,td{
 }
 th{
   font-size: 20px
+}
+.column{
+  font-size: 18px;
 }
 footer{
   background-color: black;
@@ -174,6 +178,13 @@ a.mail:hover{
   text-align: center;
   margin-bottom: 40px;
 }
+#hamburger{
+  display: none;
+}
+.sm{
+  display: none;
+}
+
 @media screen and (max-width:1024px){
   body {
      margin: 0;
@@ -208,6 +219,7 @@ a.mail:hover{
     font-size: 8vw;
   }
   #header-nav{
+    display: none;
     padding: 10px;
     width: auto;
   }
@@ -224,7 +236,7 @@ a.mail:hover{
     clear: both;
     text-align: center;
     margin: 0px 5px;
-    padding-top: 50px;
+    padding-top: 0vw;
   }
   .image{
     float: none;
@@ -252,8 +264,14 @@ a.mail:hover{
     margin: 0px 5px;
     padding-top: 0px;
   }
-  th,td{
+  td{
     font-size: 3.8vw;
+  }
+  th{
+    font-size: 4.2vw;
+  }
+  .column{
+    font-size: 4vw;
   }
   .left{
     float: none;
@@ -298,10 +316,79 @@ a.mail:hover{
   }
   footer{
     margin: auto;
-    height: 28vw;
+    height: 30vw;
   }
   .copyright{
     clear: both;
     font-size: 3.2vw;
   }
+#hamburger{
+  display: block;
+  background: rgba(52, 58, 64, .5);
+  position: relative;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  height: 13vw;
+  width: 15vw;
+  top: 2vw;
+  right: 2vw;
+}
+.icon span{
+  position: absolute;
+  left: 3.2vw;
+  width: 8vw;
+  height: 1vw;
+  background-color: white;
+  border-radius: 8px;
+  transition: ease 0.75s;
+}
+.icon span:nth-of-type(1){
+  top:3vw;
+}
+.icon span:nth-of-type(2){
+  top:6vw;
+}
+.icon span:nth-of-type(3){
+  top:9vw;
+}
+
+.close span:nth-of-type(1){
+  transform: rotate(45deg);
+  top:6.2vw;
+}
+.close span:nth-of-type(2){
+  opacity: 0;
+}
+.close span:nth-of-type(3){
+  transform: rotate(-45deg);
+  top:6.2vw;
+}
+.sm{
+  top:65vw;
+  left:0px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+}
+.sm.fixed{
+  left: 0;
+  position: fixed;
+  top: 15vw;
+}
+#hamburger.fixed{
+  position: fixed;
+}
+.sm ul{
+  padding-left: 0px;
+}
+.sm li{
+  float: none;
+  text-align: center;
+}
+.sm a{
+  text-align: center;
+  color: white;
+  font-size: 7vw;
+}
 }
